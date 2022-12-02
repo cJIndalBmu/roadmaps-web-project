@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/signup.css">
+
+    <style>
+        
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ************************************* Navigation Bar ******************************************* -->
+    <div class = "navbar">
+        <ul class= "navbarul">
+            <a href="/gallery"><li class="home">HOME</li></a>
+            <a href="#exit"><li class="contact">CONTACT US</li></a>
+            <a href="/"><li class="login">LOGIN</li></a>
+            <a href="/gallery"><img  class= "logo" src=" static/images/logo.png" alt="hlajfkla"></a>
+        </ul>
+    </div>
+
+    <!-- ************************************ starting ***************-->
+
+    <h2 class="headingSignup">Sign up if you are new to our website</h2>
+
+    <div class="SignupBox">
+    <form method="post" action="/ff" >
+        <div class="name"><input class="input_1" type="" placeholder="" name="naam"></div>
+        <div class="Username"><input class="input_2" type="" placeholder="" name="user"></div>
+        <div class="emailbody"><input class="input_3" type="" placeholder="" name="email"></div>
+        <div class="Password"><input class="input_4" type="" placeholder="" name="password"></div>
+        <div class="SignupButton"><button class="button">SignUp</button></div>
+    </form>
+    </div>
+
+
+    <script>
+        class signup{
+            constructor(){
+                let input_1=document.querySelector(".input_1")
+                input_1.type="text"
+                input_1.placeholder="Enter your name"
+                input_1.style.textAlign="center"
+                input_1.style.backgroundColor="black"
+                input_1.style.color="white"
+                input_1.style.border="5px"
+
+
+                let input_2=document.querySelector(".input_2")
+                input_2.type="text"
+                input_2.placeholder="Enter your username"
+                input_2.style.textAlign="center"
+                input_2.style.backgroundColor="black"
+                input_2.style.color="white"
+                input_2.style.border="5px"
+
+
+                let input_3=document.querySelector(".input_3")
+                input_3.type="text"
+                input_3.placeholder="Enter your Email id"
+                input_3.style.textAlign="center"
+                input_3.style.backgroundColor="black"
+                input_3.style.color="white"
+                input_3.style.border="5px"
+
+
+                let input_4=document.querySelector(".input_4")
+                input_4.type="text"
+                input_4.placeholder="Enter your password"
+                input_4.style.textAlign="center"
+                input_4.style.backgroundColor="black"
+                input_4.style.color="white"
+                input_4.style.border="5px"
+
+
+                let button=document.querySelector("button")
+                button.textContent="SignUp"
+                button.style.backgroundColor="#4C0959"
+                button.style.border="5px"
+
+            }
+        }
+
+        let obj=new signup()
+    </script>
+
+<!-- **************************************** Exit Bar *************************** -->
+
+
+<footer id="exit">
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>We are here to provide you free education and roadmaps for dfvhajkfhkd dhvfkasjfj dvfafdsjfioaf fadsfjiajsfj </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#">Web Design, Development</a></div>
+            <div><a href="#">Web UX Design, Reasearch</a></div>
+            <div><a href="#">Web User Interface Design</a></div>
+            <div><a href="#">Theme Development, Design</a></div>
+            <div><a href="#">Mobile Application Design</a></div>
+            <div><a href="#">Wire raming & Prototyping</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <img style="margin-left: 100px;" class="imageFb" src="static/images/fbCircle.webp" alt="">
+                <img class="imageFb" src="static/images/gmail.png" alt="">
+                <img class="imageFb" src="static/images/instaCirle.png" alt="">
+                <img class="imageFb" src="static/images/twitter_circle-512.webp" alt="">
+              </div>
+            </form>
+          </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

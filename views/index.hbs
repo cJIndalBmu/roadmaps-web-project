@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/login.css">
+
+    
+</head>
+
+<body>
+
+    <!-- ************************************* Navigation Bar ******************************************* -->
+    <div class = "navbar">
+        <ul class= "navbarul">
+            <a href="/gallery"><li class="home">HOME</li></a>
+            <a href="#exit"><li class="contact">CONTACT US</li></a>
+            <a href="/"><li class="login">LOGIN</li></a>
+            <a href="/gallery"><img  class= "logo" src=" static/images/logo.png" alt="hlajfkla"></a>
+        </ul>
+    </div>
+
+    <!-- ************************************ starting ***************-->
+
+    <h2 class="headingLogin">Login for updates on different courses</h2>
+
+    <div class="LoginBox">
+        <form method="post" action="/ff" >
+            <div class="username" ><input class="input_1"  type="" placeholder="" name="id"></div>
+            <div class="password"> <input class="input_2" type="" name="pass" placeholder=""> </div>
+            <a class="forgot" href="#">Forgot password?</a>
+            <div class="loginbody"><button class="button" type="" ></button></div>
+            <a class="signupBody" href="/sign">Signup</a>
+        </form>
+    </div>
+
+<!-- **************************************** Exit Bar *************************** -->
+
+<script>
+    class login{
+        constructor(){
+            let input_1=document.querySelector(".input_1")
+            input_1.type="text"
+            input_1.placeholder="User Name"
+            input_1.style.backgroundColor="black"
+            input_1.style.textAlign="center"
+            input_1.style.border="5px"
+            input_1.style.color="white"
+
+
+
+            let input_2=document.querySelector(".input_2")
+            input_2.type="text"
+            input_2.placeholder="Password"
+            input_2.style.backgroundColor="black"
+            input_2.style.color="white"
+            input_2.style.textAlign="center"
+            input_2.style.border="5px"
+            
+
+
+
+            let button=document.querySelector(".button")
+            button.textContent="LOGIN"
+            button.type="submit"
+            button.style.backgroundColor="#4C0959"
+            button.style.border="5px"
+        }
+    }
+
+    let obj=new login()
+</script>
+
+
+<footer id="exit">
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>We are here to provide you free education and roadmaps for dfvhajkfhkd dhvfkasjfj dvfafdsjfioaf fadsfjiajsfj </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#">Web Design, Development</a></div>
+            <div><a href="#">Web UX Design, Reasearch</a></div>
+            <div><a href="#">Web User Interface Design</a></div>
+            <div><a href="#">Theme Development, Design</a></div>
+            <div><a href="#">Mobile Application Design</a></div>
+            <div><a href="#">Wire raming & Prototyping</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <form action="/ff" method="post">
+                <input type="text" placeholder="Enter email address" name="email">
+              
+                <input type="submit" name="" value="Send">
+              </form>
+              <div class="media-icons">
+                <img style="margin-left: 100px;" class="imageFb" src="static/images/fbCircle.webp" alt="">
+                <img class="imageFb" src="static/images/gmail.png" alt="">
+                <img class="imageFb" src="static/images/instaCirle.png" alt="">
+                <img class="imageFb" src="static/images/twitter_circle-512.webp" alt="">
+              </div>
+            </form>
+          </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background: #050626;
+    margin: 0%;
+}
+
+.navbar{
+    background-color: black;
+    padding: 20px 0px 0px 0px;
+
+    width: 100%;
+   
+
+}
+li{
+    display: inline-block;
+    color: white;
+    margin: 0px 18px;
+    padding: 0px 20px;
+    
+}
+.home{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    float: right;
+}
+.contact{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    float: right;
+}
+
+.home:hover{
+    color:rgb(103, 11, 209) ;
+}
+.contact:hover{
+    color:rgb(103, 11, 209) ;
+}
+.login:hover{
+    color:rgb(103, 11, 209) ;
+}
+.login{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    float: right;
+}
+
+.logo{
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+.intro{
+    color: white;
+    margin-top: 100px;
+    
+}
+.navbarul{
+    margin-top: 0px;
+}
+
+
+.head{
+    color:white;
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+
+.para1{
+    color: white;
+    text-align: center;
+}
+
+.head1{
+    color: white;
+}
+
+.head2{
+    color: white;
+}
+.div1{
+    text-align: center;
+    background-color: black;
+    width: 30%;
+    border-radius: 30px;
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 40px;
+}
+.div1:hover{
+  transform: scale(1.12);
+  transition: transform .4s;;
+  background-color: #282A3A;
+}
+.div2{
+    text-align: center;
+    background-color:black;
+    width: 30%;
+    border-radius: 30px;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 40px;
+    
+}
+.div2:hover{
+  transform: scale(1.12);
+  transition: transform .4s;;
+  background-color: #282A3A;
+}
+.div3{
+    text-align: center;
+    background-color: black;
+    width: 30%;
+    border-radius: 30px;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 40px;
+}
+.div3:hover{
+  transform: scale(1.12);
+  transition: transform .4s;
+  background-color: #282A3A;
+}
+.button{
+    background-color: #735F32;
+    font-size: 150%;
+    border-radius: 10px;
+    border-color: black;
+}
+.button:hover{
+  transform: scale(1.12);
+  transition: transform .4s;
+}
+.para2{
+    color: white;
+}
+.head3{
+    color: white;
+}
+.para3{
+    color: white;
+}
+
+*{
+
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+  }
+  footer{
+    width: 100%;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    background: #111;
+    margin-top: 180px;
+  }
+  footer .content{
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .content p,a{
+    color: #fff;
+  }
+  footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+  }
+  footer .content .topic{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+  
+  }
+  footer .content p{
+    text-align: justify;
+  }
+  footer .content .lower .topic{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower i{
+    padding-right: 16px;
+  }
+  footer .content .middle{
+    padding-left: 80px;
+  }
+  footer .content .middle a{
+    line-height: 32px;
+  }
+  footer .content .right input[type="text"]{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+  }
+  footer .content .right input[type="submit"]{
+    height: 42px;
+    width: 100%;
+    font-size: 18px;
+    color: #d9d9d9;
+    background: #eb2f06;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #eb2f06;
+    transition: all 0.3s ease-in-out;
+  }
+  .content .right input[type="submit"]:hover{
+    background: none;
+    color:  #eb2f06;
+  }
+  footer .content .media-icons a{
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 0;
+    transition: all 0.3s ease;
+  }
+  .content .media-icons a:hover{
+    border-color: #eb2f06;
+  }
+  footer a{
+    transition: all 0.3s ease;
+  }
+  footer a:hover{
+    color: #eb2f06;
+  }
+  @media (max-width:1100px) {
+    footer .content .middle{
+      padding-left: 50px;
+    }
+  }
+  @media (max-width:950px){
+    footer .content .box{
+      width: 50%;
+    }
+    .content .right{
+      margin-top: 40px;
+    }
+  }
+  @media (max-width:560px){
+    footer{
+      position: relative;
+    }
+    footer .content .box{
+      width: 100%;
+      margin-top: 30px;
+    }
+    footer .content .middle{
+      padding-left: 0;
+    }
+  }
+  .imageFb{
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    margin-left: 18px;
+  }
+
+    </style>
+</head>
+<body>
+    <div class = "navbar">
+        <ul class= "navbarul">
+            <a href="/gallery"><li class="home">HOME</li></a>
+            <a href="#exit"><li class="contact">CONTACT US</li></a>
+            <a href="/"><li class="login">LOGIN</li></a>
+            <a href="/gallery"><img  class= "logo" src=" static/images/logo.png" alt="hlajfkla"></a>
+        </ul>
+    </div>
+
+    <div>
+        <h1 class="head">Explore the different DevOps courses</h1>
+    </div>
+
+    <div class="div1">
+        <h1 class="head1">Free</h1>
+        <h1 class="head2">from $0/month</h1>
+        <button class="button"> Enroll Now</button>
+        <br><br>
+        <h1 class="head3">Benefits of this course:-</h1>
+        <p class="para3">1) Good if you are a beginner.</p>
+        <p class="para3">2) This course will be benefitial <br> for those who just want <br> to gain essence of DevOps.</p>
+        <p class="para3">3) No hidden charges and no subscription</p>
+        <p class="para3">4) Recorded lectures from teachers accross <br> the globe.</p>
+        <br><br><br>
+    </div>
+
+        <div class="div2">
+        <h1 class="head1">Paid</h1>
+        <h1 class="head2">from $20/month</h1>
+        <button class="button"> Enroll now</button>
+        <br><br>
+        <h1 class="head3">Benefits of this course:-</h1>
+        <p class="para3">1) Good if you are a beginner.</p>
+        <p class="para3">2) This course will be benefitial <br> for those who just want <br> to gain essence of DevOps.</p>
+        <p class="para3">3) No hidden charges and no subscription</p>
+        <p class="para3">4) Recorded lectures from teachers accross <br> the globe.</p>
+        <br><br><br>
+    </div>
+
+
+        <div class="div3">
+          <h1 class="head1">Paid</h1>
+        <h1 class="head2">from $40/month</h1>
+        <button class="button"> Enroll now</button>
+        <br><br>
+        <h1 class="head3">Benefits of this course:-</h1>
+        <p class="para3">1) Good if you are a beginner.</p>
+        <p class="para3">2) This course will be benefitial <br> for those who just want <br> to gain essence of DevOps.</p>
+        <p class="para3">3) No hidden charges and no subscription</p>
+        <p class="para3">4) Recorded lectures from teachers accross <br> the globe.</p>
+        <br><br><br>
+    </div>
+
+
+
+
+<footer id="exit">
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>We are here to provide you free education and roadmaps for dfvhajkfhkd dhvfkasjfj dvfafdsjfioaf fadsfjiajsfj </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#">Web Design, Development</a></div>
+            <div><a href="#">Web UX Design, Reasearch</a></div>
+            <div><a href="#">Web User Interface Design</a></div>
+            <div><a href="#">Theme Development, Design</a></div>
+            <div><a href="#">Mobile Application Design</a></div>
+            <div><a href="#">Wire raming & Prototyping</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <img style="margin-left: 100px;" class="imageFb" src="static/images/fbCircle.webp" alt="">
+                <img class="imageFb" src="static/images/gmail.png" alt="">
+                <img class="imageFb" src="static/images/instaCirle.png" alt="">
+                <img class="imageFb" src="static/images/twitter_circle-512.webp" alt="">
+              </div>
+            </form>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>

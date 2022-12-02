@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/new.css">
+    <style>
+        
+        .para1{
+            display: inline-block;
+            float: left;
+            color: white;
+            width: 55%;
+            padding-left: 7%;
+            padding-right: 7%;
+            font-size: 25px;
+        }
+        .para2{
+            display: inline-block;
+            float: right;
+            color: white;
+            width: 55%;
+            padding-left: 7%;
+            padding-right: 7%;
+            font-size: 25px;
+        }
+        
+    </style> 
+</head>
+
+
+
+<body>
+    <!-- ********************************************** Body Begins here ******************************** -->
+
+<!-- Navigation Bar -->
+    <div class = "navbar">
+        <ul class= "navbarul">
+            <a href="/gallery"><li class="home">HOME</li></a>
+            <a href="#exit"><li class="contact">CONTACT US</li></a>
+            <a href="/"><li class="login">LOGIN</li></a>
+            <a href="/gallery"><img  class= "logo" src=" static/images/logo.png" alt="hlajfkla"></a>
+        </ul>
+    </div>
+
+    <!-- Intro to Our Website on first page -->
+
+    <!-- <h1>Image Slider</h1>
+    <div class="maindiv">
+
+    </div> -->
+
+       
+
+        <h1 class = "head"></h1>
+
+    <div style="margin-bottom: 70px">
+        <p class="para1"></p>
+
+        <img class="img1" src="" alt="image">
+    </div>
+
+    <div style="margin-bottom:70px;">
+        <p class="para2"></p>
+        <img style="margin-left:90px ;" class="img2" src="" alt="image">
+    </div>
+
+    <!-- Starting of Our courses Roadmaps -->
+
+    <h1 style="text-align:center; color: white; margin-bottom: 0px; ">Courses</h1>
+    <hr style="width:8%; height: 3px;">
+
+    <script>
+        async function loadBMUPage(){
+            let request = new Request("static/json/home.json")
+            let response = await fetch(request)
+            let json_obj = await response.json()
+            first(json_obj)
+            }
+
+        
+           function first(json_obj){
+            let h1=document.querySelector(".head")
+            h1.innerHTML=json_obj["heading_1"]
+
+            let p1=document.querySelector(".para1")
+            p1.innerHTML=json_obj["para_1"]
+
+            let img1=document.querySelector(".img1")
+            img1.src=json_obj["img_1"]
+
+            let p2=document.querySelector(".para2")
+            p2.innerHTML=json_obj["para_2"]
+
+            let img2=document.querySelector(".img2")
+            img2.src=json_obj["img_2"]
+          }
+
+           
+
+        
+        
+        loadBMUPage()
+        
+
+        
+    </script>
+
+
+
+    <div class="row1Box">
+       <a href="/dev">
+        <div class = "devopsBox">
+            <h2 class="blockHeading" id="dev"></h2>
+            <img class="blockImage" id="devimg" src="" alt="devops logo">
+            <p class="blockPara" id="devp"> </p>
+            
+        </div>
+       </a>
+    
+       <a href="blockchain">
+        <div class="blockchainBox">
+            <h2 class="blockHeading" id="block"></h2>
+            <img class="blockImage" id="blockimg" src="" alt="blockchain logo">
+            <p class="blockPara" id="blockp"></p>
+        </div>
+       </a>
+        <div class="gitBox">
+            <h2 class="blockHeading" id="git"></h2>
+            <img class="blockImage" id="gitimg" src="" alt="github logo">
+            <p class="blockPara" id="gitp"></p>
+        </div>
+        <div class="remoteBox">
+            <h2 class="blockHeading" id="remote"></h2>
+            <img class="blockImage" id="remoteimg" src="" alt="remote job logo">
+            <p class="blockPara" id="remotep"> </p>
+        </div>
+    </div>
+
+    <div class="row2box">
+        <div class="dsaBox">
+            <h2 class="blockHeading">Data Structures</h2>
+            <img class="blockImage"  src="static/images/remotejob.png" alt="dsa logo">
+            <p class="blockPara">A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.</p>
+        </div>
+        <div class="vidEditBox">
+            <h2 class="blockHeading">Video Editing</h2>
+            <img class="blockImage" src="static/images/remotejob.png" alt="video Editing logo">
+            <p class="blockPara">Video editing is the process of editing segments of motion video production footage, special effects and sound recordings in the post-production process.</p>
+        </div>
+    
+        <div class="webBox">
+            <h2 class="blockHeading">Web Development</h2>
+            <img class="blockImage" src="static/images/remotejob.png" alt="webDev logo">
+            <p class="blockPara">A web developer's job is to create websites. While their primary role is to ensure the website is visually appealing and easy to navigate. Great job Opportunities</p>
+        </div>
+
+    </div>
+
+
+
+    <script>
+         class boxes{
+                constructor(){
+                    let h1=document.querySelector("#dev")
+                    h1.innerHTML="Devops"
+                    let img1=document.querySelector("#devimg")
+                    img1.src="static/images/devops1.jpeg"
+                    let p1=document.querySelector("#devp")
+                    p1.innerHTML="Without a doubt, DevOps engineer is the most in-demand role in the current market, especially with an increased number of high paying remote opportunities."
+
+
+                    let h2=document.querySelector("#block")
+                    h2.innerHTML="Block-Chain"
+                    let img2=document.querySelector("#blockimg")
+                    img2.src="static/images/blockchain.jpeg"
+                    let p2=document.querySelector("#blockp")
+                    p2.innerHTML="Blockchain defined: Blockchain is a shared, immutable ledger that facilitates the process of recording transactions and tracking assets in a business network."
+
+
+                    let h3=document.querySelector("#git")
+                    h3.innerHTML="Git & GitHub"
+                    let img3=document.querySelector("#gitimg")
+                    img3.src="static/images/git.png"
+                    let p3=document.querySelector("#gitp")
+                    p3.innerHTML="GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere."
+
+
+                    let h4=document.querySelector("#remote")
+                    h4.innerHTML="Remote Jobs"
+                    let img4=document.querySelector("#remoteimg")
+                    img4.src="static/images/remotejob.png"
+                    let p4=document.querySelector("#remotep")
+                    p4.innerHTML="Remote work is the practice of employees doing their jobs from a location other than a central office operated by the employer even in a different country."
+
+
+                    let h5=document.querySelector("#remote")
+                    h5.innerHTML="Remote Jobs"
+                    let img5=document.querySelector("#remoteimg")
+                    img5.src="static/images/remotejob.png"
+                    let p5=document.querySelector("#remotep")
+                    p5.innerHTML="Remote work is the practice of employees doing their jobs from a location other than a central office operated by the employer even in a different country."
+                }
+            }
+
+            let obj=new boxes()
+    </script>
+
+
+    <!-- ****************************************** Features Section **********************************   -->
+
+    <div class="mission">
+        <h1 class="features">FEATURES</h1>
+        <div style="width: 20%; margin-left: auto;margin-right: auto; border: 2px solid blue;">
+        </div>
+        <div>
+            <h3 style="text-align:center; margin-top:50px;font-size: 30px;">What makes our courses special ?</h3>
+        </div>
+
+
+        <div>
+            <img class="featureImg" style="border-radius:3200px ; height:70px; margin-left: 13%; margin-top: 50px;"  src="static/images/book.jpeg" alt="book">
+            <h2 style="margin-left:9% ;">Structured Learning</h2>
+            <p style="margin-left: 7%;margin-top: 50px;">Learning made easy. Complete syllabus is</p>
+            <p style="margin-left: 7.5%;">covered while never compromising on</p>
+            <p style="margin-left: 13.5%;">quality.</p>
+        </div>
+        <div style="margin-left:32%; margin-top:-320px">
+            <img class="featureImg"  style="border-radius:3200px ; height:70px; margin-left: 21%; margin-top: 50px;"  src="static/images/copy.jpeg" alt="book">
+            <h2 style="margin-left:22.5% ;">Notes</h2>
+            <p style="margin-left: 13%;margin-top: 50px; ">Get complete notes for all lectures so that</p>
+            <p style="margin-left: 13%;">you can focus on learning and practising.</p>
+            
+        </div>
+        <div style="margin-left:1100px; margin-top:-290px">
+            <img class="featureImg"  style="border-radius:3200px ; height:70px; margin-left: 19%; margin-top: 50px;"  src="static/images/que.jpeg" alt="book">
+            <h2 style="margin-left: 13%;">Assignments</h2>
+            <p style="margin-left: -4%;margin-top: 50px;">Assignments and questions are provided</p>
+            <p style="margin-left: 2.5%;">to understand the concepts well.</p>
+            
+        </div>
+
+
+
+        <div style="margin-top:90px ;">
+            <img class="featureImg"  style="border-radius:3200px ; height:70px; margin-left: 13%; margin-top: 50px;"  src="static/images/doubt.png" alt="book">
+            <h2 style="margin-left:10.5%;">Doubt Support</h2>
+            <p style="margin-left: 6%;margin-top: 50px;">Clear all your doubts through LIVE discord</p>
+            <p style="margin-left: 13%;">support.</p>
+            
+        </div>
+        <div style="margin-left:32%; margin-top:-320px">
+            <img class="featureImg"  style="border-radius:3200px ; height:70px; margin-left: 21%; margin-top: 50px;"  src="static/images/edu.jpeg" alt="book">
+            <h2 style="margin-left:21% ;">Guidance</h2>
+            <p style="margin-left: 13%;margin-top: 50px;">Get expert guidance with career, open</p>
+            <p style="margin-left: 13%;">source and internships, jobs around the</p>
+            <p style="margin-left: 24%;">world.</p>
+            
+        </div>
+        <div style="margin-left:1100px; margin-top:-290px">
+            <img class="featureImg"  style="border-radius:3200px ; height:70px; margin-left: 19%; margin-top: 50px;"  src="static/images/stick.jpeg" alt="book">
+            <h2 style="margin-left:19% ;">Projects</h2>
+            <p style="margin-left: -4%;margin-top: 50px;">Learn by doing and apply your knowledge</p>
+            <p style="margin-left: -4%;">via projects and open source contributions.</p>
+            
+        </div>
+
+
+    </div>
+
+
+    <!-- Exit Bar -->
+
+    {{!-- <div class="exitbar" id="exit">
+
+        <img class="gmail" src="static/images/gmail.png" alt="gmail">
+        <h3 class="mail">growmore8221@gmail.com</h3>
+        <img class="twitter" src="static/images/twitter.png" alt="twitter">
+        <h3 class="tweet">@Growmore8221</h3>
+        <img class="instagram" src="static/images/insta.svg" alt="instagram image">
+        <h3 class="insta">@growmore8221</h3>
+        <img class="discord" src="static/images/discord.jpg" alt="instagram image">
+        <h3 class="disc">@growmore8221</h3>
+        <img class="telegram" src="static/images/telegram.webp" alt="instagram image">
+        <h3 class="tele">@growmore8221</h3>
+
+    </div> --}}
+
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>We are here to provide you free education and roadmaps for dfvhajkfhkd dhvfkasjfj dvfafdsjfioaf fadsfjiajsfj </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#">Web Design, Development</a></div>
+            <div><a href="#">Web UX Design, Reasearch</a></div>
+            <div><a href="#">Web User Interface Design</a></div>
+            <div><a href="#">Theme Development, Design</a></div>
+            <div><a href="#">Mobile Application Design</a></div>
+            <div><a href="#">Wire raming & Prototyping</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <img style="margin-left: 100px;" class="imageFb" src="/images/fbCircle.webp" alt="">
+                <img class="imageFb" src="/images/gmail.png" alt="">
+                <img class="imageFb" src="/images/instaCirle.png" alt="">
+                <img class="imageFb" src="/images/twitter_circle-512.webp" alt="">
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+
+   
+
+    
+    
+    
+   
+</body>
+</html>

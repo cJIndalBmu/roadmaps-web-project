@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/new.css">
+    <style>
+/*                     NavBar                              */
+body{
+            background: #050626;
+            margin: 0%;
+        }
+
+        .navbar{
+            background-color: black;
+            padding: 20px 0px 0px 0px;
+    
+            width: 100%;
+           
+
+        }
+        li{
+            display: inline-block;
+            color: white;
+            margin: 0px 18px;
+            padding: 0px 20px;
+            
+        }
+        .home{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-size: 25px;
+            float: right;
+        }
+        .contact{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-size: 25px;
+            float: right;
+        }
+        .login{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-size: 25px;
+            float: right;
+        }
+        .home:hover{
+            color:rgb(103, 11, 209) ;
+        }
+        .contact:hover{
+            color:rgb(103, 11, 209) ;
+        }
+        .login:hover{
+            color:rgb(103, 11, 209) ;
+        }
+        .logo{
+            width: 100px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbarul{
+            margin-top: 0px;
+        }
+
+        /* starting intro */
+        .firstHeading{
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+        .wib{
+            display:flex; 
+            margin-bottom: 20px;
+        }
+        .img1{
+            width: 40%;
+            border-radius: 30px;
+            margin-left: 5%;
+        }
+        .img2{
+            width: 40%;
+            border-radius: 30px;
+            /* margin-right: 5%; */
+            margin-left: 10%;
+        }
+        .para1{
+            display: inline-block;
+            float: right;
+            color: white;
+            width: 55%;
+            padding-left: 7%;
+            padding-right: 7%;
+            font-size: 25px;
+        }
+        .para2{
+            display: inline-block;
+            float: left;
+            color: white;
+            width: 43%;
+            margin-left: 5%;
+
+            font-size: 25px;
+        }
+        .block1{
+            margin-bottom: 80px;
+        }
+        .block2{
+            margin-bottom: 50px ;
+        }
+        .cstart{
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+        }
+        /* .line0{
+            display: inline-block;
+            background-color: white;
+            margin-left: 10%;
+            height: 7px;
+            width: 10%;
+            margin-top: 10px;
+            margin-bottom: 2.5px;
+            border-radius: 100px;
+            padding-top: 5px;
+
+        } */
+        /* .line{
+            display: inline-block; */
+            /* background-color: white;
+            height: 7px;
+            width: 10%;
+            margin-top: 10px;
+            margin-bottom: 2.5px;
+            border-radius: 100px;
+            padding-top: 5px;
+
+        }
+        .dot{
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-color: orange;
+            border-radius: 100px;
+            margin-top: 10px;
+        } */
+        /* .vrline{
+            height: 150px;
+            width: 7px;
+            margin-left: 80%;
+            background-color: white;
+            border-radius: 100px;
+            padding-right: 5px;
+        } */
+        /* .dotnextline{
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-color: orange;
+            border-radius: 100px;
+
+            float: right;
+            margin-right: 18.9%;
+        } */
+        /* .linesAdots{
+            margin-top: 70px;
+            margin-bottom: 70px ;
+
+        } */
+        /* .nextline{
+            display: inline-block;
+            background-color: white;
+            height: 7px;
+            width: 10%;
+            margin-top: 10px;
+            margin-bottom: 2.5px;
+            border-radius: 100px;
+            padding-top: 5px;
+            float: right;
+        } */
+        /* .dotnextline1{
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-color: orange;
+            border-radius: 100px;
+
+            float: right;
+
+        } */
+        html {
+        scroll-behavior: smooth;
+        }
+
+        * {
+  box-sizing: border-box;
+}
+        .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content1 {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+.content1:hover{
+    transform: scale(1.12);
+    transition: transform .4s;
+    background-color:cornsilk;
+}
+.timeText{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .misfeat{
+            display: inline-block;
+            width: 30%;
+        }
+        .mission{
+        margin-top: 20%;
+        color: white;
+        
+       }
+       .features{
+        text-align:center;
+        font-size: 50px ;
+       }
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+ 
+
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <!-- NAVBAR -->
+
+   <div class = "navbar">
+        <ul class= "navbarul">
+            <a href="/gallery"><li class="home">HOME</li></a>
+            <a href="#exit"><li class="contact">CONTACT US</li></a>
+            <a href="/"><li class="login">LOGIN</li></a>
+            <a href="/gallery"><img  class= "logo" src="static/images/logo.png" alt="hlajfkla"></a>
+        </ul>
+    </div>
+
+    <!-- Starting intro -->
+    <h2 class="firstHeading">BECOME AN IN-DEMAND BLOCKCHAIN MASTER</h2>
+    
+    <div class="block1">
+        <img class="img1" src="static/images/blockchain1.jpg" alt="blockchain image">
+        <p class="para1"> <b class="wib">What is Blockchain?</b> Blockchain technology is a decentralized, distributed ledger that stores the record of ownership of digital assets. Any data stored on blockchain is unable to be modified, making the technology a legitimate disruptor for industries like payments, cybersecurity and healthcare. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum optio ut distinctio laborum iure nisi accusantium nemo labore ?</p>
+    </div>
+    
+    <div class="block2">
+        <img class="img2" src="static/images/blockchain3.webp" alt="blockchain image">
+        <p class="para2"> <b class="wib">Why to learn BlockChain?</b>Blockchain development might be the most marketable career path today because people are eager to realize all the benefits of Blockchain.
+        These individuals require absolute attention to detail as theirs is a high ranking position. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic ex porro, nobis modi beatae rem, vero cupiditate ducimus ipsa reprehenderit aspernatur tempore fuga sit esse illo aut, iure eaque animi!
+            <br><br>
+
+    </div>
+
+    <h2 class="cstart">Some links and references that will help you to get start with BlockChain technology</h2>
+    /* <!-- <div class="linesAdots">
+        <div class="line0"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="vrline"></div>
+        <div class="dotnextline"></div>
+        <div class="nextline"></div>
+        <div class="dotnextline1"></div>
+        <div class="nextline"></div>
+        <div class="dotnextline1"></div>
+        <div class="nextline"></div>
+        <div class="dotnextline1"></div>
+        <div class="nextline"></div>
+        <div class="dotnextline1"></div>
+        <div class="nextline"></div>
+        <div class="dotnextline1"></div>
+
+
+    </div> --> */
+
+    <div class="timeline">
+        <div class="container left">
+          <div class="content1">
+            <h2>Decentralization</h2>
+            <p class="timeText">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content1">
+            <h2>Cryptography</h2>
+            <p class="timeText" >Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content1">
+            <h2>Mining & incentive models</h2>
+            <p class="timeText" >Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content1">
+            <h2>consensus protocols</h2>
+            <p class="timeText" >Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content1">
+            <h2>Crypto Wallets</h2>
+            <p class="timeText" >Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content1">
+            <h2>Chain Link</h2>
+            <p class="timeText" >Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mission">
+        <h1 class="features">FEATURES</h1>
+        <div style="width: 20%; margin-left: auto;margin-right: auto; border: 2px solid blue;">
+        </div>
+        <div>
+            <h3 style="text-align:center; margin-top:50px;font-size: 30px;">What makes our courses special ?</h3>
+        </div>
+
+
+        <div class="misfeat" style="margin-left:5%;">
+            <img class="featureImg" style="border-radius:3200px ; height:70px; margin-left: 13%; margin-top: 50px;"  src="static/images/book.jpeg" alt="book">
+            <h2 style="margin-left:9% ;">Structured Learning</h2>
+            <p style="margin-left: 7%;margin-top: 50px;">Learning made easy. Complete syllabus is</p>
+            <p style="margin-left: 7.5%;">covered while never compromising on</p>
+            <p style="margin-left: 13.5%;">quality.</p>
+        </div>
+        <div class="misfeat"> 
+            <!-- style="margin-left:32%; margin-top:-320px" -->
+            <img class="featureImg"  style="border-radius:3200px ; height:70px; margin-left: 21%; margin-top: 50px;"  src="static/images/copy.jpeg" alt="book">
+            <h2 style="margin-left:22.5% ;">Notes</h2>
+            <p style="margin-left: 13%;margin-top: 50px; ">Get complete notes for all lectures so that</p>
+            <p style="margin-left: 13%;">you can focus on learning and practising.</p>
+            
+        </div>
+        <div class="misfeat">
+            <!-- style="margin-left:1100px; margin-top:-290px" -->
+            <img class="featureImg"  style="border-radius:3200px ; height:70px; margin-left: 19%; margin-top: 50px;"  src="static/images/que.jpeg" alt="book">
+            <h2 style="margin-left: 13%;">Assignments</h2>
+            <p style="margin-left: -4%;margin-top: 50px;">Assignments and questions are provided</p>
+            <p style="margin-left: 2.5%;">to understand the concepts well.</p>
+            
+        </div>
+
+
+
+        <div class="misfeat" style="margin-left: 5%;">
+            <!-- style="margin-top:90px ;" -->
+            <img class="featureImg"  style="border-radius:3200px ; height:70px; margin-left: 13%; margin-top: 50px;"  src="static/images/doubt.png" alt="book">
+            <h2 style="margin-left:10.5%;">Doubt Support</h2>
+            <p style="margin-left: 6%;margin-top: 50px;">Clear all your doubts through LIVE discord</p>
+            <p style="margin-left: 13%;">support.</p>
+            
+        </div>
+        <div class="misfeat">
+            <!-- style="margin-left:32%; margin-top:-320px" -->
+            <img class="featureImg"  style="border-radius:3200px ; height:70px; margin-left: 21%; margin-top: 50px;"  src="static/images/edu.jpeg" alt="book">
+            <h2 style="margin-left:21% ;">Guidance</h2>
+            <p style="margin-left: 13%;margin-top: 50px;">Get expert guidance with career, open</p>
+            <p style="margin-left: 13%;">source and internships, jobs around the</p>
+            <p style="margin-left: 24%;">world.</p>
+            
+        </div>
+        <div class="misfeat">
+            <!-- style="margin-left:1100px; margin-top:-290px" -->
+            <img class="featureImg"  style="border-radius:3200px ; height:70px; margin-left: 19%; margin-top: 50px;"  src="static/images/stick.jpeg" alt="book">
+            <h2 style="margin-left:19% ;">Projects</h2>
+            <p style="margin-left: -4%;margin-top: 50px;">Learn by doing and apply your knowledge</p>
+            <p style="margin-left: -4%;">via projects and open source contributions.</p>
+            
+        </div>
+
+
+    </div>
+      
+
+/* Exit barrrrrrrrrrrrrrrrrrrrrrrrrrrrr               */
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>We are here to provide you free education and roadmaps for dfvhajkfhkd dhvfkasjfj dvfafdsjfioaf fadsfjiajsfj </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#">Web Design, Development</a></div>
+            <div><a href="#">Web UX Design, Reasearch</a></div>
+            <div><a href="#">Web User Interface Design</a></div>
+            <div><a href="#">Theme Development, Design</a></div>
+            <div><a href="#">Mobile Application Design</a></div>
+            <div><a href="#">Wire raming & Prototyping</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <img style="margin-left: 100px;" class="imageFb" src="static/images/fbCircle.webp" alt="">
+                <img class="imageFb" src="static/images/gmail.png" alt="">
+                <img class="imageFb" src="static/images/instaCirle.png" alt="">
+                <img class="imageFb" src="static/images/twitter_circle-512.webp" alt="">
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+    
+</body>
+</html>
