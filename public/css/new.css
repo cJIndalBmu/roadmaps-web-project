@@ -1,0 +1,508 @@
+body{
+    background: #050626;
+    margin: 0%;
+}
+
+.navbar{
+    background-color: black;
+    padding: 20px 0px 0px 0px;
+
+    width: 100%;
+   
+
+}
+li{
+    display: inline-block;
+    color: white;
+    margin: 0px 18px;
+    padding: 0px 20px;
+    
+}
+.home{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    float: right;
+}
+.contact{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    float: right;
+}
+
+.home:hover{
+    color:rgb(103, 11, 209) ;
+}
+.contact:hover{
+    color:rgb(103, 11, 209) ;
+}
+.login:hover{
+    color:rgb(103, 11, 209) ;
+}
+.login{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    float: right;
+}
+
+.logo{
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+.intro{
+    color: white;
+    margin-top: 100px;
+    
+}
+.navbarul{
+    margin-top: 0px;
+}
+
+.devopsBox{
+    display: inline-block;
+    width: 235px;
+    height: 350px;
+    background-color: #550000;
+    border-radius: 30px;
+    margin-left: 7%;
+    transition: transform .4s;
+}
+.devopsBox:hover{
+    transform: scale(1.12);
+}
+.blockHeading{
+    text-align:center; 
+    color: white;
+}
+.blockImage{
+    height:120px;
+    width: 95%;
+    
+    padding-left:5px ;
+
+}
+.blockPara{
+    padding-left: 5px;
+    color: white;
+    
+}
+.blockchainBox{
+    display: inline-block;
+    width: 235px;
+    height: 350px;
+    background-color: #1835CD;
+    border-radius: 30px;
+    margin-left: 7%;
+    transition: transform .4s;
+}
+.blockchainBox:hover{
+    transform: scale(1.12);
+}
+.gitBox{
+    display: inline-block;
+    width: 235px;
+    height: 350px;
+    background-color: #660168;
+    border-radius: 30px;
+    margin-left: 7%;
+    transition: transform .4s;
+}
+.gitBox:hover{
+    transform: scale(1.12);
+}
+.remoteBox{
+    display: inline-block;
+    width: 235px;
+    height: 350px;
+    background-color: #98005B;
+    border-radius: 30px;
+    margin-left: 7%;
+    transition: transform .4s;
+}
+.remoteBox:hover{
+    transform: scale(1.12);
+}
+.dsaBox{
+    display: inline-block;
+    width: 235px;
+    height: 350px;
+    background-color: #803562;
+    border-radius: 30px;
+    margin-left: 7%;
+}
+.dsaBox:hover{
+    transition: transform .4s;
+
+    transform: scale(1.12);
+}
+.webBox{
+    display: inline-block;
+    width: 235px;
+    height: 350px;
+    background-color: #1CA5DF;
+    border-radius: 30px;
+    margin-left: 7%;
+    transition: transform .4s;
+}
+.webBox:hover{
+    transform: scale(1.12);
+}
+.row1Box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.row2box{
+    margin-left: 15%;
+}
+.vidEditBox{
+    display: inline-block;
+    width: 235px;
+    height: 350px;
+    background-color: #272A2E;
+    border-radius: 30px;
+    margin-left: 7%;
+    transition: transform .4s;
+}
+.vidEditBox:hover{
+    transform: scale(1.12);
+}
+
+.img1{
+    width: 35%;
+    border-radius: 30px;
+    margin-left: 5%;
+}
+.img2{
+    width: 35%;
+    border-radius: 30px;
+    margin-left: 5%;
+}
+
+
+/*                                                Bhavya's css                                 */
+
+
+
+.head{
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.exitbar{
+    position: absolute;
+    width: 100%;
+    height: 390px;
+    margin-top: 20%;
+    background: #242424;
+}
+
+.gmail{
+    width: 70px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.mail{
+color: aliceblue;
+margin-left: 170px;
+margin-top: 53px;
+font-size: 30px;
+width: 400px;
+}
+
+.twitter{
+    width: 70px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.tweet{
+    color: aliceblue;
+    margin-left: 170px;
+    margin-top: 82px;
+    font-size: 30px;
+    width: 200px;
+}
+
+.instagram{
+    width: 70px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.insta{
+    color: aliceblue;
+    margin-left: 170px;
+    margin-top: 82px;
+    font-size: 30px;
+    width: 200px;
+}
+
+.gmail:hover{
+transform: scale(1.12);
+ transition: transform .4s;
+}
+.twitter:hover{
+transform: scale(1.12);
+ transition: transform .4s;
+}
+.instagram:hover{
+transform: scale(1.12);
+ transition: transform .4s;
+}
+
+.mail:hover{
+color:rgb(103, 11, 209) ;
+}
+.tweet:hover{
+color:rgb(103, 11, 209) ;
+}
+.insta:hover{
+color:rgb(103, 11, 209) ;
+}
+
+
+.discord{
+    width: 75px;
+    height: 50px;
+    margin-top: -305px;
+    margin-left: 1000px;
+    position: absolute;
+}
+.disc{
+    color: aliceblue;
+    margin-left: 1140px;
+    margin-top: -300px;
+    font-size: 30px;
+    width: 200px;
+}
+.telegram{
+    width: 75px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 1000px;
+    position: absolute;
+    /* transition: transform .4s; */
+    
+}
+.tele{
+    color: aliceblue;
+    margin-left: 1140px;
+    margin-top: 82px;
+    font-size: 30px;
+    width: 200px;
+}
+.discord:hover{
+    transform: scale(1.12);
+    transition: transform .4s;
+}
+
+.disc:hover{
+color:rgb(103, 11, 209) ;
+}
+.telegram:hover{
+ transform: scale(1.12);
+ transition: transform .4s;
+}
+
+.tele:hover{
+color:rgb(103, 11, 209) ;
+}
+.features{
+text-align:center;
+font-size: 50px ;
+}
+.mission{
+margin-top: 20%;
+color: white;
+
+}
+html {
+scroll-behavior: smooth;
+}
+.featureImg:hover{
+    transform: scale(1.12);
+    transition: transform .4s;
+}
+.misfeat{
+    display: inline-block;
+    width: 30%;
+}
+
+/* Nik's code */
+
+/* h1{
+    font-size: 2.1rem;
+    line-height: 1.4;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.maindiv{
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    left: 50;
+    top: 50;
+   
+    background-image: url(https://cdn.pixabay.com/photo/2018/04/16/16/16/sunset-3325080__340.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: slider 15s infinite linear;
+
+    
+
+}
+@keyframes slider{
+    0%{background-image: url(https://cdn.pixabay.com/photo/2018/04/16/16/16/sunset-3325080__340.jpg); }
+    35%{background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__340.jpg); }
+    75%{background-image: url(https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg); }
+    95%{background-image: url(https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png);}
+} */
+
+
+
+
+*{
+
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+  }
+  footer{
+    width: 100%;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    background: #111;
+    margin-top: 180px;
+  }
+  footer .content{
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .content p,a{
+    color: #fff;
+  }
+  footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+  }
+  footer .content .topic{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+  
+  }
+  footer .content p{
+    text-align: justify;
+  }
+  footer .content .lower .topic{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower i{
+    padding-right: 16px;
+  }
+  footer .content .middle{
+    padding-left: 80px;
+  }
+  footer .content .middle a{
+    line-height: 32px;
+  }
+  footer .content .right input[type="text"]{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+  }
+  footer .content .right input[type="submit"]{
+    height: 42px;
+    width: 100%;
+    font-size: 18px;
+    color: #d9d9d9;
+    background: #eb2f06;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #eb2f06;
+    transition: all 0.3s ease-in-out;
+  }
+  .content .right input[type="submit"]:hover{
+    background: none;
+    color:  #eb2f06;
+  }
+  footer .content .media-icons a{
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 0;
+    transition: all 0.3s ease;
+  }
+  .content .media-icons a:hover{
+    border-color: #eb2f06;
+  }
+  footer a{
+    transition: all 0.3s ease;
+  }
+  footer a:hover{
+    color: #eb2f06;
+  }
+  @media (max-width:1100px) {
+    footer .content .middle{
+      padding-left: 50px;
+    }
+  }
+  @media (max-width:950px){
+    footer .content .box{
+      width: 50%;
+    }
+    .content .right{
+      margin-top: 40px;
+    }
+  }
+  @media (max-width:560px){
+    footer{
+      position: relative;
+    }
+    footer .content .box{
+      width: 100%;
+      margin-top: 30px;
+    }
+    footer .content .middle{
+      padding-left: 0;
+    }
+  }
+  .imageFb{
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    margin-left: 18px;
+  }

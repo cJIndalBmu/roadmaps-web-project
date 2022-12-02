@@ -1,0 +1,349 @@
+
+body{
+    background: #050626;
+    margin: 0%;
+}
+.logo{
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.navbarul{
+    margin-top: 0px;}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    background-color: black;
+    padding: 20px 0px 0px 0px;
+
+    width: 100%;
+   
+
+}
+li{
+    display: inline-block;
+    color: white;
+    margin: 0px 18px;
+    padding: 0px 20px;
+    
+}
+.home{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    float: right;
+}
+.contact{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    float: right;
+}
+.login{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    float: right;
+}
+.home:hover{
+    color:rgb(103, 11, 209) ;
+}
+.contact:hover{
+    color:rgb(103, 11, 209) ;
+}
+.login:hover{
+    color:rgb(103, 11, 209) ;
+}
+.exitbar{
+    position: absolute;
+    width: 100%;
+    height: 390px;
+    margin-top: 20%;
+    background: #242424;
+}
+
+.gmail{
+    width: 70px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.mail{
+color: aliceblue;
+margin-left: 170px;
+margin-top: 53px;
+font-size: 30px;
+width: 370px;
+}
+
+.twitter{
+    width: 70px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.tweet{
+    color: aliceblue;
+    margin-left: 170px;
+    margin-top: 82px;
+    font-size: 30px;
+    width: 200px;
+}
+
+.instagram{
+    width: 70px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.insta{
+    color: aliceblue;
+    margin-left: 170px;
+    margin-top: 82px;
+    font-size: 30px;
+    width: 200px;
+}
+
+.gmail:hover{
+transform: scale(1.12);
+ transition: transform .4s;
+}
+.twitter:hover{
+transform: scale(1.12);
+ transition: transform .4s;
+}
+.instagram:hover{
+transform: scale(1.12);
+ transition: transform .4s;
+}
+
+.mail:hover{
+color:rgb(103, 11, 209) ;
+}
+.tweet:hover{
+color:rgb(103, 11, 209) ;
+}
+.insta:hover{
+color:rgb(103, 11, 209) ;
+}
+
+
+.discord{
+    width: 75px;
+    height: 50px;
+    margin-top: -305px;
+    margin-left: 1000px;
+    position: absolute;
+}
+.disc{
+    color: aliceblue;
+    margin-left: 1140px;
+    margin-top: -300px;
+    font-size: 30px;
+    width: 200px;
+}
+.telegram{
+    width: 75px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 1000px;
+    position: absolute   
+}
+.tele{
+    color: aliceblue;
+    margin-left: 1140px;
+    margin-top: 82px;
+    font-size: 30px;
+    width: 200px;
+}
+.discord:hover{
+    transform: scale(1.12);
+    transition: transform .4s;
+}
+
+.disc:hover{
+color:rgb(103, 11, 209) ;
+}
+.telegram:hover{
+ transform: scale(1.12);
+ transition: transform .4s;
+}
+
+.tele:hover{
+color:rgb(103, 11, 209) ;
+}
+
+.mission{
+margin-top: 100px;
+color: white;
+}
+.features{
+text-align: center;
+font-size: 50px;
+
+}
+html {
+scroll-behavior: smooth;
+}
+.codeButton:hover{
+    transform: scale(1.12);
+    transition: transform .4s;
+}
+.misfeat{
+    display: inline-block;
+    width: 30%;
+}
+.first8{
+    display: inline-block;
+    width: 35%;
+    margin-left: 7%;
+}
+.last8{
+    display: inline-block;
+    width: 35%;
+    margin-left: 20%;
+}
+
+
+*{
+
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+  }
+  footer{
+    width: 100%;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    background: #111;
+    margin-top: 180px;
+  }
+  footer .content{
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .content p,a{
+    color: #fff;
+  }
+  footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+  }
+  footer .content .topic{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+  
+  }
+  footer .content p{
+    text-align: justify;
+  }
+  footer .content .lower .topic{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower i{
+    padding-right: 16px;
+  }
+  footer .content .middle{
+    padding-left: 80px;
+  }
+  footer .content .middle a{
+    line-height: 32px;
+  }
+  footer .content .right input[type="text"]{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+  }
+  footer .content .right input[type="submit"]{
+    height: 42px;
+    width: 100%;
+    font-size: 18px;
+    color: #d9d9d9;
+    background: #eb2f06;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #eb2f06;
+    transition: all 0.3s ease-in-out;
+  }
+  .content .right input[type="submit"]:hover{
+    background: none;
+    color:  #eb2f06;
+  }
+  footer .content .media-icons a{
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 0;
+    transition: all 0.3s ease;
+  }
+  .content .media-icons a:hover{
+    border-color: #eb2f06;
+  }
+  footer a{
+    transition: all 0.3s ease;
+  }
+  footer a:hover{
+    color: #eb2f06;
+  }
+  @media (max-width:1100px) {
+    footer .content .middle{
+      padding-left: 50px;
+    }
+  }
+  @media (max-width:950px){
+    footer .content .box{
+      width: 50%;
+    }
+    .content .right{
+      margin-top: 40px;
+    }
+  }
+  @media (max-width:560px){
+    footer{
+      position: relative;
+    }
+    footer .content .box{
+      width: 100%;
+      margin-top: 30px;
+    }
+    footer .content .middle{
+      padding-left: 0;
+    }
+  }
+  .imageFb{
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    margin-left: 18px;
+  }
